@@ -27,11 +27,11 @@
 
 
 /* Rounded Pixelated Corners */
-header, nav, section, #div_wrapper {
-    /* https://pixelcorners.lukeb.co.uk/?radius=10&multiplier=4 */
+/* https://pixelcorners.lukeb.co.uk/?radius=10&multiplier=4 */
+/* padding-top: 1px; */
+header, nav, section {
     padding-left: 25px;
     padding-bottom: 5px;
-    /* padding-top: 1px; */
     clip-path: polygon(
         0px calc(100% - 28px),
         4px calc(100% - 28px),
@@ -95,7 +95,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: green;
+    /* background-color: green; */
 }
 
 @media (min-width: 600px) {
@@ -106,13 +106,15 @@ body {
         box-sizing: border-box;
         max-height: calc(100vh - (24px * 2));
         width: 200px;
-        margin-right: .5em;
+        margin-right: .25em;
     }
     #content {
         flex-direction: row;
     }
     main {
-        margin-left: .5em;
+        margin-left: .25em;
+        width: calc(100% - 200px);
+        /* min-width: 400px; */
     }
 }
 
@@ -120,7 +122,9 @@ nav {
     font-size: 12px;
     width: auto;
     padding-left: 0;
-    background-color: orange;
+    /* background-color: orange; */
+    background-color: var(--blue);
+
 }
 #div_wrapper {
     background-color: var(--blue);
@@ -128,7 +132,7 @@ nav {
 }
 main {
     flex: 1;
-    min-width: 400px;
+    width: 100%;
     /* margin: 0 0 0 .5em; */
 }
 section {
@@ -138,3 +142,11 @@ footer {
     background-color: var(--dark-green);
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
