@@ -94,26 +94,31 @@ body {
 #content {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: green;
 }
-@media (max-width: 800px) {
-    nav, main {
-      flex: 100%;
-    }
-  }
-@media (min-width: 800px) {
+
+@media (min-width: 600px) {
     nav {
         overflow: hidden auto;
         position: sticky;
         top: 24px;
         box-sizing: border-box;
         max-height: calc(100vh - (24px * 2));
+        width: 200px;
+        margin-right: .5em;
+    }
+    #content {
+        flex-direction: row;
+    }
+    main {
+        margin-left: .5em;
     }
 }
 
 nav {
     font-size: 12px;
-    width: 200px;
+    width: auto;
     padding-left: 0;
     background-color: orange;
 }
@@ -123,7 +128,8 @@ nav {
 }
 main {
     flex: 1;
-    margin: 0 0 0 .5em;
+    min-width: 400px;
+    /* margin: 0 0 0 .5em; */
 }
 section {
     background-color: var(--dark-grey);
