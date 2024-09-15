@@ -29,7 +29,7 @@
 /* Rounded Pixelated Corners */
 /* https://pixelcorners.lukeb.co.uk/?radius=10&multiplier=4 */
 /* padding-top: 1px; */
-header, nav, section {
+/* header, nav, section {
     padding-left: 25px;
     padding-bottom: 5px;
     clip-path: polygon(
@@ -78,13 +78,15 @@ header, nav, section {
         4px 28px,
         0px 28px
     );
-}
+} */
+
+/* https://css-tricks.com/books/greatest-css-tricks/scroll-shadows/ */
 
 html {
     scroll-behavior: smooth;
 }
 header {
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
 }
 body {
     background-color: var(--light-green);
@@ -105,7 +107,7 @@ body {
         top: 24px;
         box-sizing: border-box;
         max-height: calc(100vh - (24px * 2));
-        width: 200px;
+        min-width: 150px;
         margin-right: .25em;
     }
     #content {
@@ -123,12 +125,18 @@ nav {
     width: auto;
     padding-left: 0;
     /* background-color: orange; */
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
+    /* border: 2px solid var(--blue); */
+
+    
 
 }
 #div_wrapper {
-    background-color: var(--blue);
+    background-color: var(--dark-green);
+    border: 2px solid var(--blue);
+
     margin-left: 0;
+    
 }
 main {
     flex: 1;
@@ -137,16 +145,26 @@ main {
 }
 section {
     background-color: var(--dark-grey);
+    border: 2px solid var(--blue);
+    margin-bottom: .5em;
+
 }
 footer {
     background-color: var(--dark-green);
 }
 
-ul{
+#div_wrapper ul{
     list-style: none;
     padding: 0;
 }
 
-li {
+/* li {
     padding: 5px;
+} */
+
+a {word-break: break-all;}
+
+h2 {
+    margin: 2px 0 2px 0;
+    
 }
