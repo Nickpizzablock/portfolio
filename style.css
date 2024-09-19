@@ -6,6 +6,8 @@
     --blue:  	#b5c6cf;
     --light-grey: #adb6c2;
     --dark-grey: #9ca4b2;
+
+    /* New Colors */
 }
 @font-face {
     font-family: "FOT-NewRodinProEB";
@@ -91,7 +93,7 @@ header {
 body {
     background-color: var(--light-green);
     font-weight: 100;
-    position: absolute;
+    /* position: absolute; */
 }
 #content {
     display: flex;
@@ -124,6 +126,7 @@ nav {
     font-size: 12px;
     width: auto;
     padding-left: 0;
+    margin-bottom: .5em;
     /* background-color: orange; */
     /* background-color: var(--blue); */
     /* border: 2px solid var(--blue); */
@@ -135,7 +138,7 @@ nav {
     background-color: var(--dark-green);
     border: 2px solid var(--blue);
 
-    margin-left: 0;
+    padding: .5em;
     
 }
 main {
@@ -147,10 +150,16 @@ section {
     background-color: var(--dark-grey);
     border: 2px solid var(--blue);
     margin-bottom: .5em;
+    padding: 0 0 0 .5em;
+  /* overflow: visible; */
+
 
 }
 footer {
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
+    /* height: 100vh; */
+    width: 100vw;
+    /* margin-left: 0; */
 }
 
 #div_wrapper ul{
@@ -166,5 +175,8 @@ a {word-break: break-all;}
 
 h2 {
     margin: 2px 0 2px 0;
-    
+}
+p {
+    /* font-size: 14px;; */
+    padding-left: 1em;
 }
