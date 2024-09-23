@@ -1,0 +1,191 @@
+
+:root {
+    /* https://www.color-hex.com/color-palette/32801 */
+    --light-green: #c7e0de;
+    --dark-green: #bfd5d5;
+    --blue:  	#b5c6cf;
+    --light-grey: #adb6c2;
+    --dark-grey: #9ca4b2;
+
+    /* New Colors */
+}
+@font-face {
+    font-family: "FOT-NewRodinProEB";
+    src: url("fonts/FOT-NewRodinProEB.otf") format("opentype");
+    /* font-weight: bold; */
+    /* font-style: normal; */
+
+}
+
+/* For mobile phones: */
+
+
+
+* {
+    /* border-radius: 10px; */
+    /* color: rgb(42, 42, 42); */
+    font-family: "FOT-NewRodinProEB";
+}
+
+
+/* Rounded Pixelated Corners */
+/* https://pixelcorners.lukeb.co.uk/?radius=10&multiplier=4 */
+/* padding-top: 1px; */
+/* header, nav, section {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    clip-path: polygon(
+        0px calc(100% - 28px),
+        4px calc(100% - 28px),
+        4px calc(100% - 20px),
+        8px calc(100% - 20px),
+        8px calc(100% - 12px),
+        12px calc(100% - 12px),
+        12px calc(100% - 8px),
+        20px calc(100% - 8px),
+        20px calc(100% - 4px),
+        28px calc(100% - 4px),
+        28px 100%,
+        calc(100% - 28px) 100%,
+        calc(100% - 28px) calc(100% - 4px),
+        calc(100% - 20px) calc(100% - 4px),
+        calc(100% - 20px) calc(100% - 8px),
+        calc(100% - 12px) calc(100% - 8px),
+        calc(100% - 12px) calc(100% - 12px),
+        calc(100% - 8px) calc(100% - 12px),
+        calc(100% - 8px) calc(100% - 20px),
+        calc(100% - 4px) calc(100% - 20px),
+        calc(100% - 4px) calc(100% - 28px),
+        100% calc(100% - 28px),
+        100% 28px,
+        calc(100% - 4px) 28px,
+        calc(100% - 4px) 20px,
+        calc(100% - 8px) 20px,
+        calc(100% - 8px) 12px,
+        calc(100% - 12px) 12px,
+        calc(100% - 12px) 8px,
+        calc(100% - 20px) 8px,
+        calc(100% - 20px) 4px,
+        calc(100% - 28px) 4px,
+        calc(100% - 28px) 0px,
+        28px 0px,
+        28px 4px,
+        20px 4px,
+        20px 8px,
+        12px 8px,
+        12px 12px,
+        8px 12px,
+        8px 20px,
+        4px 20px,
+        4px 28px,
+        0px 28px
+    );
+} */
+
+/* https://css-tricks.com/books/greatest-css-tricks/scroll-shadows/ */
+
+html {
+    scroll-behavior: smooth;
+}
+header {
+    /* background-color: var(--dark-green); */
+}
+body {
+    background-color: var(--light-green);
+    font-weight: 100;
+    /* position: absolute; */
+}
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+@media (min-width: 600px) {
+    nav {
+        overflow: hidden auto;
+        position: sticky;
+        top: 24px;
+        box-sizing: border-box;
+        max-height: calc(100vh - (24px * 2));
+        min-width: 150px;
+        margin-right: .25em;
+    }
+    .div_wrapper {
+        /* position: relative; */
+    }
+    #content {
+        flex-direction: row;
+    }
+    main {
+        margin-left: .25em;
+        width: calc(100% - 200px);
+        /* min-width: 400px; */
+    }
+}
+
+nav {
+    font-size: 12px;
+    width: auto;
+    padding-left: 0;
+    margin-bottom: .5em;
+    /* max-height: 100vh; */
+    /* overflow-y:auto; */
+    /* background-color: orange; */
+    /* background-color: var(--blue); */
+    /* border: 2px solid var(--blue); */
+
+    
+
+}
+.div_wrapper {
+    background-color: var(--dark-green);
+    border: 2px solid var(--blue);
+    margin-bottom: .5em;
+    padding: .5em;
+    
+}
+main {
+    flex: 1;
+    width: 100%;
+    /* margin: 0 0 0 .5em; */
+}
+section {
+    background-color: var(--dark-grey);
+    border: 2px solid var(--blue);
+    margin-bottom: .5em;
+    padding: 0 0 0 .5em;
+  /* overflow: visible; */
+
+
+}
+footer {
+    /* background-color: var(--dark-green); */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* margin-left: 0; */
+}
+
+.div_wrapper ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* li {
+    padding: 5px;
+} */
+
+a {word-break: break-all;}
+
+h2 {
+    margin: 2px 0 2px 0;
+}
+p {
+    /* font-size: 14px;; */
+    padding: 0 1em 0 1em;
+}
+
+summary h2 {
+    display: inline;
+}
